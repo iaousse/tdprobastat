@@ -1,0 +1,13 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: intro
+- file: proba
+  sections:
+    - file: tdproba1
+    - file: tdproba2
+    - file: tdproba3
+    - file: tdproba4
+- file: stat
+  sections:
+    - file: tdstat1
