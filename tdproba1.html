@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Série N° 1 &#8212; TD de Probabilités et Statistique Déscriptive</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Série N° 2" href="tdproba2.html" />
+    <link rel="prev" title="Probabilités" href="proba.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TD de Probabilités et Statistique Déscriptive</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="proba.html">
+   Probabilités
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Série N° 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdproba2.html">
+     Série N° 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdproba3.html">
+     Série N° 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdproba4.html">
+     Série N° 4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="stat.html">
+   Statistique Descriptive
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdstat1.html">
+     Série N° 1
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/tdproba1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftdproba1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-1">
+   Exercice 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-2">
+   Exercice 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-3">
+   Exercice 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-4">
+   Exercice 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-5">
+   Exercice 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-6">
+   Exercice 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-7">
+   Exercice 7
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="serie-n-1">
+<h1>Série N° 1<a class="headerlink" href="#serie-n-1" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="exercice-1">
+<h2>Exercice 1<a class="headerlink" href="#exercice-1" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soit l’expérience aléatoire « jeter une pièce de monnaie trois fois ».
+On considère les ´événements suivants :</p>
+<ul class="simple">
+<li><p>A : « Face apparait exactement deux fois »,</p></li>
+<li><p>B : « Face apparait au moins deux fois »,</p></li>
+<li><p>C : « Face apparait pour la première fois lorsque Pile est apparue
+au moins une fois ».</p></li>
+</ul>
+<ol class="simple">
+<li><p>Donner l’ensemble fondamental <span class="math notranslate nohighlight">\(\Omega\)</span>.</p></li>
+<li><p>Donner les éléments de <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(C\)</span>.</p></li>
+<li><p>Décrire les événements <span class="math notranslate nohighlight">\(\bar{A}\cap B\)</span>, <span class="math notranslate nohighlight">\(\bar{A}\cap\bar{B}\)</span> et
+<span class="math notranslate nohighlight">\(\bar{A}\cap C\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="exercice-2">
+<h2>Exercice 2<a class="headerlink" href="#exercice-2" title="Lien permanent vers ce titre">¶</a></h2>
+<p>On jette deux dés réguliers et on s’intéresse aux deux nombres obtenus.</p>
+<ol class="simple">
+<li><p>Définir l’ensemble fondamental <span class="math notranslate nohighlight">\(\Omega\)</span>. Est-il fini ou non ? Si
+oui, donner son cardinal.</p></li>
+<li><p>Donner trois exemples d’événements ´élémentaires.</p></li>
+<li><p>On est dans le cas d’équiprobabilité ? Pourquoi ?</p></li>
+<li><p>Décrire en détail l’évènement A : « La somme des deux nombres
+obtenus est égale à 4 ». Quel est son cardinal ? En déduire sa
+probabilité.</p></li>
+<li><p>Décrire en détail l’évènement B : « La différence entre les deux
+nombres obtenus est nulle ». Quel est son cardinal ? En d´déduire sa
+probabilité</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-3">
+<h2>Exercice 3<a class="headerlink" href="#exercice-3" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une maladie atteint 3% d’une population de 20000 individus. On appelle
+« malade » l’individu atteint de cette maladie et « bien portant » celui
+qui ne l’est pas. On dispose d’un test pour la détecter. Ce test donne
+les résultats suivants :</p>
+<ul class="simple">
+<li><p>Chez les individus malades, 95% des tests sont positifs.</p></li>
+<li><p>Chez les individus bien portants, 2% des tests sont positifs.</p></li>
+</ul>
+<p>On note les événements suivants :</p>
+<ul class="simple">
+<li><p>M: « être malade »</p></li>
+<li><p>T: « avoir un test positif »</p></li>
+</ul>
+<p>On rencontre une personne au hasard de cette population.</p>
+<ol class="simple">
+<li><p>Calculer<span class="math notranslate nohighlight">\(P(T)\)</span>, <span class="math notranslate nohighlight">\(P(T\cap M)\)</span> et <span class="math notranslate nohighlight">\(P(M\cup T)\)</span>.</p></li>
+<li><p>Sachant que la personne rencontrée est malade, calculer la
+probabilité que son test soit négatif.</p></li>
+<li><p>Sachant que la personne rencontrée a un test positif, calculer la
+probabilité qu’elle ne soit pas malade.</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-4">
+<h2>Exercice 4<a class="headerlink" href="#exercice-4" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une urne contient 49 boules numérotées de 1 à 49. On tire simultanément
+6 boules. On appelle « tirage » cet ensemble de 6 numéros obtenus.</p>
+<ol class="simple">
+<li><p>Combien y a-t-il de tirages au total ?</p></li>
+<li><p>Combien y a-t-il de tirages qui contiennent 3 numéros pairs et 3
+numéros impairs ?</p></li>
+<li><p>Combien y a-t-il de tirages qui contiennent au moins 5 numéros pairs
+?</p></li>
+<li><p>Combien y a-t-il de tirages qui contiennent au moins 1 numéros pairs
+?</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-5">
+<h2>Exercice 5<a class="headerlink" href="#exercice-5" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans un jeu de 52 cartes, on choisit 5 cartes au hasard (ces cartes
+s’appellent une « main »).</p>
+<ol class="simple">
+<li><p>Quel est le nombre total de mains que l’on peut obtenir ?</p></li>
+<li><p>Combien de mains contiennent exactement 4 as ?</p></li>
+<li><p>Combien de mains contiennent exactement 3 as et 2 rois ?</p></li>
+<li><p>Combien de mains contiennent au moins 3 rois ?</p></li>
+<li><p>Combien de mains contiennent au moins un as ?</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-6">
+<h2>Exercice 6<a class="headerlink" href="#exercice-6" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une urne contient 10 boules numérotées de 1 à 10. On tire les boules une
+à une et on les places à mesure en rangée.</p>
+<ol class="simple">
+<li><p>Combien y a-t-il de dispositions possibles ?</p></li>
+<li><p>Combien y a-t-il de dispositions possibles d’y retrouver les boules
+paires côte à côte ?</p></li>
+<li><p>Combien y a-t-il de dispositions possibles d’y retrouver les boules
+paires côte à côte, de même que les boules impaires ?</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-7">
+<h2>Exercice 7<a class="headerlink" href="#exercice-7" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une urne contient 20 boules numérotées de 1 à 20. On tire une boule au
+hasard. On note les événements suivants :</p>
+<ul class="simple">
+<li><p>A : « le numéro sorti est un multiple de 3 »</p></li>
+<li><p>B : « le numéro sorti est strictement supérieur à 5 »</p></li>
+</ul>
+<p>Calculer : <span class="math notranslate nohighlight">\(P(A)\)</span>, <span class="math notranslate nohighlight">\(P(B)\)</span>, <span class="math notranslate nohighlight">\(P(\bar{A})\)</span>, <span class="math notranslate nohighlight">\(P(\bar{B})\)</span>,
+<span class="math notranslate nohighlight">\(P(\bar{A}\cap \bar{B})\)</span>, <span class="math notranslate nohighlight">\(P(\bar{A}\cup \bar{B})\)</span>,
+<span class="math notranslate nohighlight">\(P(\overline{A \cup B})\)</span>, <span class="math notranslate nohighlight">\(P(\overline{A\cap B})\)</span>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="proba.html" title="previous page">Probabilités</a>
+    <a class='right-next' id="next-link" href="tdproba2.html" title="next page">Série N° 2</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Par Iaousse M'barek<br/>
+        
+            &copy; droits d'auteur 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

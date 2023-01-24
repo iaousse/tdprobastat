@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Série N° 4 &#8212; TD de Probabilités et Statistique Déscriptive</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Statistique Descriptive" href="stat.html" />
+    <link rel="prev" title="Série N° 3" href="tdproba3.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TD de Probabilités et Statistique Déscriptive</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="proba.html">
+   Probabilités
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdproba1.html">
+     Série N° 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdproba2.html">
+     Série N° 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdproba3.html">
+     Série N° 3
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Série N° 4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="stat.html">
+   Statistique Descriptive
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tdstat1.html">
+     Série N° 1
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/tdproba4.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftdproba4.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-1">
+   Exercice 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-2">
+   Exercice 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-3">
+   Exercice 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-4">
+   Exercice 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-5">
+   Exercice 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-6">
+   Exercice 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-7">
+   Exercice 7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-8">
+   Exercice 8
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-9">
+   Exercice 9
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-10">
+   Exercice 10
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-11">
+   Exercice 11
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="serie-n-4">
+<h1>Série N° 4<a class="headerlink" href="#serie-n-4" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="exercice-1">
+<h2>Exercice 1<a class="headerlink" href="#exercice-1" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire continue avec la fonction de densité
+suivante :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f_X(x)=\begin{cases} cx^2 \mbox{ si } -1 \leq x \leq 1 \\ 0 \mbox{ sinon}\end{cases}\end{split}\]</div>
+<ol class="simple">
+<li><p>Trouver la constante <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+<li><p>Trouver <span class="math notranslate nohighlight">\(\mathbb E(X)\)</span> et <span class="math notranslate nohighlight">\(V(X)\)</span>.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(P(X\geq \dfrac{1}{2})\)</span>.</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-2">
+<h2>Exercice 2<a class="headerlink" href="#exercice-2" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire continue avec la fonction de densité
+suivante :</p>
+<div class="math notranslate nohighlight">
+\[f_X(x)= \dfrac{1}{2}e^{-|x|}\]</div>
+<p>if <span class="math notranslate nohighlight">\(Y=X^2\)</span>, trouver la fonction de répartition de <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+</div>
+<div class="section" id="exercice-3">
+<h2>Exercice 3<a class="headerlink" href="#exercice-3" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire continue avec la fonction de densité
+suivante :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f_X(x) = \begin{cases} 4x^3 \mbox{ si } 0&lt; x &lt;\leq 1 \\ 0 \mbox{ sinon }\end{cases}\end{split}\]</div>
+<p>Déterminer <span class="math notranslate nohighlight">\(P(X\leq \dfrac{2}{3}|X&gt;\dfrac{1}{3})\)</span>.</p>
+</div>
+<div class="section" id="exercice-4">
+<h2>Exercice 4<a class="headerlink" href="#exercice-4" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soit <span class="math notranslate nohighlight">\(X \sim N(3,9)\)</span> et <span class="math notranslate nohighlight">\(Y=5-X\)</span></p>
+<ol class="simple">
+<li><p>Déterminer <span class="math notranslate nohighlight">\(P(X&gt;2)\)</span>.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(P(-1&lt;Y&lt;3)\)</span>.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(P(X&gt;4|Y&lt;2)\)</span>.</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-5">
+<h2>Exercice 5<a class="headerlink" href="#exercice-5" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soit <span class="math notranslate nohighlight">\(X \sim Exp(2)\)</span> et <span class="math notranslate nohighlight">\(Y = 2+3X\)</span>.</p>
+<ol class="simple">
+<li><p>Déterminer <span class="math notranslate nohighlight">\(P(X&gt;2)\)</span>.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(\mathbb E(Y)\)</span> et <span class="math notranslate nohighlight">\(V(Y)\)</span>.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(P(X&gt;2|Y&lt;11)\)</span>.</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-6">
+<h2>Exercice 6<a class="headerlink" href="#exercice-6" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soient <span class="math notranslate nohighlight">\(X_1, \ldots, X_n\)</span> des variables aléatoires indépendantes avec
+<span class="math notranslate nohighlight">\(X_i \sim Exp(\lambda)\)</span>. On définit <span class="math notranslate nohighlight">\(Y= X_1+ X_2 + \ldots + X_n\)</span>.</p>
+<p>On dit que <span class="math notranslate nohighlight">\(Y\)</span> suit une loi <strong>Gamma</strong> de paramètres <span class="math notranslate nohighlight">\(n\)</span> et <span class="math notranslate nohighlight">\(\lambda\)</span> et
+on écrit <span class="math notranslate nohighlight">\(Y\sim Gamma(n, \lambda)\)</span>.</p>
+<p>Montrer que si <span class="math notranslate nohighlight">\(Y\)</span> est une variable aléatoire qui suit une loi
+<span class="math notranslate nohighlight">\(Gamma(n, \lambda)\)</span> alors <span class="math notranslate nohighlight">\(\mathbb E(Y) =\dfrac{n}{\lambda}\)</span> et
+<span class="math notranslate nohighlight">\(V(y)=\dfrac{n}{\lambda^2}\)</span>.</p>
+</div>
+<div class="section" id="exercice-7">
+<h2>Exercice 7<a class="headerlink" href="#exercice-7" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> un couple de variables aléatoire continues avec la
+fonction de densité suivante :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f_{XY}(x, y) = \begin{cases} e^{-xy} \mbox{ si }1\leq x \leq e, y&gt;0\\ 0 \mbox{ sinon}\end{cases}\end{split}\]</div>
+<ol class="simple">
+<li><p>Trouver la fonction de densité marginale <span class="math notranslate nohighlight">\(f_X\)</span>.</p></li>
+<li><p>Trouver la fonction de densité marginale <span class="math notranslate nohighlight">\(f_Y\)</span>.</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-8">
+<h2>Exercice 8<a class="headerlink" href="#exercice-8" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> un couple de variables aléatoires continues avec la
+fonction de répartition suivante :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}F_{XY}(x, y) = \begin{cases} 1-e^{-x}- e^{-2y}+e^{-(x+2y)} \mbox{ si } x , y&gt;0\\ 0 \mbox{ sinon}\end{cases}\end{split}\]</div>
+<ol class="simple">
+<li><p>Trouver la fonction de densité <span class="math notranslate nohighlight">\(f_{XY}\)</span>.</p></li>
+<li><p>Calculer <span class="math notranslate nohighlight">\(P(X&lt;2Y)\)</span>.</p></li>
+<li><p>Est-ce que <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> sont indépendantes ?</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-9">
+<h2>Exercice 9<a class="headerlink" href="#exercice-9" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> un couple de variables aléatoires continues avec la
+fonction de densité suivante :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f_{XY}(x, y) = \begin{cases} x^2+\dfrac{1}{3}y \mbox{ si }-1\leq x \leq 1, 0\leq y\leq 1\\ 0 \mbox{ sinon}\end{cases}\end{split}\]</div>
+<ol class="simple">
+<li><p>Trouver la fonction de densité de <span class="math notranslate nohighlight">\(X\)</span> sachant que <span class="math notranslate nohighlight">\(Y=y\)</span> pour
+<span class="math notranslate nohighlight">\(0\leq y\leq 1\)</span>.</p></li>
+<li><p>Calculer <span class="math notranslate nohighlight">\(P(X&gt;0|Y=y)\)</span>pour <span class="math notranslate nohighlight">\(0\leq y\leq 1\)</span>. Est-ce que cette valeur
+dépend de <span class="math notranslate nohighlight">\(y\)</span>?</p></li>
+<li><p>Est-ce que <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> sont indépendantes ?</p></li>
+</ol>
+</div>
+<div class="section" id="exercice-10">
+<h2>Exercice 10<a class="headerlink" href="#exercice-10" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> deux variables aléatoires. On suppose que
+<span class="math notranslate nohighlight">\(\sigma_X^2 =4\)</span> et <span class="math notranslate nohighlight">\(\sigma_Y^2 =9\)</span>. Soient <span class="math notranslate nohighlight">\(Z= 2X-Y\)</span> et <span class="math notranslate nohighlight">\(W= X+Y\)</span>. Si <span class="math notranslate nohighlight">\(Z\)</span>
+et <span class="math notranslate nohighlight">\(W\)</span> sont indépendantes, calculer <span class="math notranslate nohighlight">\(COV(X,Y)\)</span> et <span class="math notranslate nohighlight">\(\rho(X,Y)\)</span>.</p>
+</div>
+<div class="section" id="exercice-11">
+<h2>Exercice 11<a class="headerlink" href="#exercice-11" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> deux variables aléatoires indépendantes de loi
+<span class="math notranslate nohighlight">\(N(0,1)\)</span>. Soient <span class="math notranslate nohighlight">\(Z=7+X+Y\)</span> et <span class="math notranslate nohighlight">\(W= 1+Y\)</span>. Calculer <span class="math notranslate nohighlight">\(\rho(Z,W)\)</span></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="tdproba3.html" title="previous page">Série N° 3</a>
+    <a class='right-next' id="next-link" href="stat.html" title="next page">Statistique Descriptive</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Par Iaousse M'barek<br/>
+        
+            &copy; droits d'auteur 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
