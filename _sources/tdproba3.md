@@ -40,7 +40,7 @@ Les résultats seront approchés si nécessaire à $10^{-4}$ près.
 2.  Recopier l'arbre ci-dessous et compléter uniquement les pointillés
     par les probabilités associées :
 
-![image1](tab1.PNG)
+![image1](td3.PNG)
 
 3.  Calculer la probabilité $p(D\cap C)$.
 
