@@ -69,12 +69,7 @@ du lancer d'une pièce de monnaie.
 
 On lance une pièce de monnaie. Soit $X$ la variable aléatoire qui prend
 1 si le résultat est \"Face\" et 0 si non. Déterminer la loi de $X$. Sa
-fonction de répartition et son
-
-On lance $n$ pièces de monnaies de façon indépendante, chaque monnaie
-qui a affiché \"Face\" est lancée encore une fois. Soit $X$ la variable
-aléatoire qui prend le nombre de \"Faces\" obtenus dans le second lance.
-Déterminer la loi de $X$.
+fonction de répartition et son ésperance.
 
 ## Exercice 5 
 

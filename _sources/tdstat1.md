@@ -73,7 +73,7 @@ Calculer la médiane et l'écart inter-quartile des différentes séries.
 Avant de rendre les copies à ses élèves, un professeur a fait quelques
 calculs statistiques à partir de la série de leurs notes :
 
-::: {.center}
+
 -   moyenne : 11
 
 -   médiane : 12
@@ -85,7 +85,7 @@ calculs statistiques à partir de la série de leurs notes :
 -   note minimale : 4
 
 -   note maximale : 15
-:::
+
 
 On sait de plus qu'il y a 24 élèves dans la classe. Répondre par vrai ou
 faux aux affirmations suivantes :
@@ -119,7 +119,7 @@ devoir de mathématiques :
 
 3.  Déterminer la moyenne de la classe sur ce devoir.
 
-4.  Dans une autre classe, il y a20 filles et 15 garçons. A un contrôle,
+4.  Dans une autre classe, il y a 20 filles et 15 garçons. A un contrôle,
     la moyenne des filles était de 11,8 et celle des garçons de10,2.
     Quelle était la moyenne de la classe ?
 
